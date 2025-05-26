@@ -25,12 +25,26 @@
     <body>
 	
        <div style="background:#135a7b; color:white; padding:10px; text-align:center; position:relative;">
-        <img src="logo.png" alt="logo" style="width:80px; border-radius:50%; background:yellow; position:absolute; top:10px; left:10px;">
+       <img src="logo.png" alt="logo" style="width:80px; border-radius:50%; background:yellow; position:absolute; top:10px; left:10px;">
        <h2>Poblacion, Taytay, Palawan</h2>
        <h3>INTERACTIVE MAP</h3>
        <p><strong>By: Luwela Espinosa and Jelly Eldo</strong></p>
         </div>
 
+	<div style="text-align:center; padding:10px;">
+        <input type="text" id="search-box" placeholder="search" style="padding:8px; width:300px; border-radius:10px; border:1px solid #ccc;" disabled>
+        <button style="padding:8px; border-radius:10px; margin-left:-40px;" disabled><span>&#128269;</span></button>
+        </div>
+
+	
+        <div style="width:90%; max-width:700px; margin: 20px auto; border:1px solid #333; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px;">
+        <div style="background:#b9e6f2; padding:10px; font-style:italic; font-weight:bold; text-align:center; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+        Location Information
+        </div>
+        <div id="location-info" style="padding:15px; background:white; min-height:50px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; text-align:center;">
+        Click on a feature in the map to view details here.
+        </div>
+</div>
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
